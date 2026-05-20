@@ -1,0 +1,180 @@
+/* Styling for complete webpage body */
+body{
+
+    /* Remove default browser margin */
+    margin:0;
+
+    /* Remove default browser padding */
+    padding:0;
+
+    /* Set font style for whole page */
+    font-family: Arial, sans-serif;
+
+    /* background color */
+    background:#0b4de5;
+
+    /* Use flexbox for center alignment */
+    display:flex;
+
+    /* Horizontally center container */
+    justify-content:center;
+
+    /* Vertically center container */
+    align-items:center;
+
+    /* Full screen height */
+    height:100vh;
+}
+
+
+/* Main chat container box */
+.container{
+
+    /* Width of chatbot box */
+    width:700px;
+
+    /* White background for container */
+    background:rgb(232, 140, 2);
+
+    /* Space inside container */
+    padding:25px;
+
+    /* Rounded corners */
+    border-radius:15px;
+
+    /* Shadow around box */
+    box-shadow:0 0 20px rgba(241, 235, 235, 0.3);
+}
+
+
+/* Heading style */
+h1{
+
+    /* Center heading text */
+    text-align:center;
+
+    /* Blue text color */
+    color:#2563eb;
+
+    /* Space below heading */
+    margin-bottom:20px;
+}
+
+/* Form styling */
+form{
+
+    /* Arrange input and button in one row */
+    display:flex;
+
+    /* Gap between input and button */
+    gap:10px;
+}
+
+
+/* Input box styling */
+input{
+
+    /* Input takes remaining space */
+    flex:1;
+
+    /* Inner spacing */
+    padding:12px;
+
+    /* Border style */
+    border:2px solid #ccc;
+
+    /* Rounded input corners */
+    border-radius:10px;
+
+    /* Text size */
+    font-size:16px;
+}
+
+
+/* When user clicks input field */
+input:focus{
+
+    /* Remove default outline */
+    outline:none;
+
+    /* Change border color when focused */
+    border-color:#2563eb;
+}
+
+
+/* Button styling */
+button{
+
+    /* Space inside button */
+    padding:12px 20px;
+
+    /* Remove default border */
+    border:none;
+
+    /* Rounded corners */
+    border-radius:10px;
+
+    /* Blue background */
+    background:#f88ed5;
+
+    /* White text */
+    color:rgb(8, 1, 1);
+
+    /* Text size */
+    font-size:16px;
+
+    /* Hand cursor on hover */
+    cursor:pointer;
+
+    /* Smooth hover animation */
+    transition:0.3s;
+}
+/* Button hover effect */
+button:hover{
+
+    /* Darker blue on hover */
+    background:#1d4ed8;
+}
+
+
+/* AI reply/message box */
+.reply{
+
+    /* Space above reply section */
+    margin-top:25px;
+
+    /* Light gray background */
+    background:#f1f5f9;
+
+    /* Inner spacing */
+    padding:20px;
+
+    /* Rounded corners */
+    border-radius:12px;
+
+    /* Maximum height before scroll */
+    max-height:400px;
+
+    /* Enable vertical scrolling if content increases */
+    overflow-y:auto;
+
+    /* Space between lines */
+    line-height:1.7;
+
+    /* Text color */
+    color:#111827;
+
+    /* Preserve line breaks and spacing */
+    white-space:pre-wrap;
+}
+
+
+/* Reply heading styling */
+.reply h3{
+
+    /* Remove top margin */
+    margin-top:0;
+
+    /* Blue color */
+    color:#2563eb;
+}

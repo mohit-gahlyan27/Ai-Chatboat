@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>AI Chatbot</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- Main chatbot container -->
+    <div class="container">
+
+        <!-- Heading -->
+        <h1>AI Chatbot</h1>
+
+        <!-- Form -->
+        <form method="POST">
+
+            <!-- Input field -->
+            <input 
+                type="text"
+                name="message"
+                placeholder="Ask something..."
+                required
+            >
+
+            <!-- Submit button -->
+            <button type="submit">Send</button>
+
+        </form>
+
+        <!-- Show AI reply only if reply exists -->
+        {% if reply %}
+
+        <div class="reply">
+
+            <h3>MOHIT's Chatbot Response:</h3>
+
+            <p>{{ reply }}</p>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>
